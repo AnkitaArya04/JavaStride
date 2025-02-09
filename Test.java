@@ -1,15 +1,19 @@
+import java.util.*;
+
 public class Test{
-    int x=10;
+  
     public static void main(String[] args){
-        // System.out.println("Hello World!!");
-        int a=1;
-        System.out.println(Integer.toString(a));
+      List<Integer> arr=new ArrayList<>();
+      Map<String,Integer> marks=new HashMap<>();
 
-        String name="Ankita Arya";
-        System.out.println(name);
-
-        for(int i=0;i<8;i++){
-            System.out.println(i);
-        }
+      marks.put("rahul", 100);
+      marks.put("Simmy", 200);
+      for(Map.Entry<String,Integer> entry:marks.entrySet()){
+        System.out.println(entry.getKey()+"----");
+        System.out.println(entry.getValue());
+        System.out.println("-----");
+      }
+        
+        
     }
 }
